@@ -2952,6 +2952,7 @@ header.zindex {
 }
 
 .beforeAfter {
+  overflow: hidden;
   background-color: var(--blue);
   position: relative;
 }
@@ -2967,6 +2968,12 @@ header.zindex {
     left: auto;
     width: 50px;
   }
+}
+.beforeAfter.work {
+  background-color: var(--accent-color);
+}
+.beforeAfter.work .slider-navigation .button {
+  background-color: var(--blue);
 }
 .beforeAfter .back {
   position: absolute;
@@ -3634,6 +3641,180 @@ header.zindex {
 .projects .pagination .pgination-list a.open {
   color: var(--accent-color);
 }
+.aboutProject {
+  background-color: var(--blue);
+  position: relative;
+}
+.aboutProject .back {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  top: 5%;
+}
+.aboutProject .drop_top_r {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+@media screen and (max-width: 800px) {
+  .aboutProject .drop_top_r {
+    width: 50px;
+  }
+}
+.aboutProject .drop_top_l {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+@media screen and (max-width: 800px) {
+  .aboutProject .drop_top_l {
+    width: 100px;
+  }
+}
+.aboutProject .container {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 850px) {
+  .aboutProject .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 24px;
+  }
+}
+.aboutProject .left,
+.aboutProject .right {
+  width: 50%;
+}
+@media screen and (max-width: 850px) {
+  .aboutProject .left,
+.aboutProject .right {
+    width: 100%;
+  }
+}
+.aboutProject .top {
+  color: #fdfdfd;
+}
+.aboutProject .left {
+  width: 50%;
+}
+@media screen and (max-width: 850px) {
+  .aboutProject .left {
+    width: 100%;
+  }
+}
+.aboutProject .top {
+  color: #fff;
+}
+.aboutProject .top .text_24 {
+  font-weight: 400;
+}
+.aboutProject .right {
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 850px) {
+  .aboutProject .right {
+    height: 200px;
+  }
+}
+
+.otherProjects {
+  background-color: var(--blue);
+}
+.otherProjects .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.otherProjects .head .slider-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+@media screen and (max-width: 700px) {
+  .otherProjects .head .slider-navigation {
+    display: none;
+  }
+}
+.otherProjects .top {
+  color: #fff;
+}
+.otherProjects .otherProjects-list {
+  margin: 0 -12px;
+}
+.otherProjects .otherProjects-item {
+  border: 2px solid transparent;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 12px;
+}
+.otherProjects .otherProjects-item:hover {
+  border: 2px solid var(--accent-color);
+}
+.otherProjects .otherProjects-item:hover .card {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+.otherProjects .otherProjects-item img {
+  width: 100%;
+  height: 330px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.otherProjects .card {
+  background-color: #fff;
+  padding: 16px;
+  color: var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.otherProjects .text_16,
+.otherProjects .text_24 {
+  cursor: pointer;
+}
+.otherProjects .slider-navigation {
+  gap: 16px;
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .otherProjects .slider-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */

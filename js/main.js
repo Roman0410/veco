@@ -138,6 +138,27 @@ $(".gallery-list").slick({
     },
   ],
 });
+$(".otherProjects-list").slick({
+  slidesToShow: 3,
+  prevArrow: $(".otherProjects").find(".prev"),
+  nextArrow: $(".otherProjects").find(".next"),
+  responsive: [
+    {
+      breakpoint: 850,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
 $(window).on("load resize", function () {
   if ($(window).width() < 1024) {
     $(".count-list").slick({
